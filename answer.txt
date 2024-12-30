@@ -1,11 +1,5 @@
-Question:
-- Is JAVA a Pass by Value or a Pass by Reference programming language? 
-	Java is a pass-by-value programming language
-	
-- After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+Java cho phép tạo nhiều constructor trong một lớp, nhưng các constructor này phải khác nhau về số lượng hoặc kiểu dữ liệu của tham số, chứ không chỉ khác về tên tham số. Java dựa vào số lượng và kiểu dữ liệu của tham số để phân biệt các constructor, chứ không dựa vào tên của chúng. Vì vậy, nếu bạn muốn tạo một constructor cho DVD theo tựa đề và một constructor khác theo thể loại, bạn cần đảm bảo chúng khác nhau về số lượng hoặc kiểu dữ liệu tham số.
 
-The titles of the objects remain unchanged after calling swap(jungleDVD, cinderellaDVD) because Java uses pass-by-value, not pass-by-reference.
+Java là một ngôn ngữ lập trình truyền tham trị (Pass by Value).
 
-- After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
-
-The title of jungleDVD changes because changeTitle(jungleDVD, cinderellaDVD.getTitle()) passes a reference to the jungleDVD object into the method. In Java, objects are passed by reference, so the method modifies the title of the jungleDVD directly.
+Điều này có nghĩa là khi bạn truyền các đối số vào phương thức, Java sẽ truyền một bản sao của giá trị đó. Các thay đổi được thực hiện trên tham số bên trong phương thức sẽ không ảnh hưởng đến các giá trị gốc ở bên ngoài phương thức.
